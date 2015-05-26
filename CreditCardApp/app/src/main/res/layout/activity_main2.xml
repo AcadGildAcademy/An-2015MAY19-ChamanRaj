@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Card Balance ($)"
+            android:id="@+id/textView1"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:autoText="false"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="47dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText1"
+            android:background="#ffd3d3d3"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Yearly Interest Rate (%)"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:autoText="false" />
+
+        <EditText
+            android:layout_width="20dp"
+            android:layout_height="47dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="1"
+            android:background="#ffd3d3d3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.19">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Minimum Payment ($)"
+            android:id="@+id/textView3"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:autoText="false" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="47dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_weight="1"
+            android:background="#ffd3d3d3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.06">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Card Balance ($)"
+            android:id="@+id/textView4"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:autoText="false" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="47dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:layout_weight="1"
+            android:background="#ffd3d3d3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.07">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Months Remaining"
+            android:id="@+id/textView5"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:autoText="false" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="47dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:layout_weight="1"
+            android:background="#ffd3d3d3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest Paid Will Be ($)"
+            android:id="@+id/textView6"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:autoText="false" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="47dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText6"
+            android:background="#ffd3d3d3" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+</LinearLayout>
